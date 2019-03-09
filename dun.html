@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mouse Maze</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="dun.css">
+    </head>
+    <body>
+        <header id="roomDescription">
+            Find the treasure before the dragon finds you!
+          </header>
+          <main>
+            <p><img id="wall1" src="wall1.png" width="200px" height="200px">Room: <span id="location">12</span><img id="wall2" src="wall3.png" width="200px" height="200px"></p><br><br>
+            <p id="action"></p>
+          </main>
+          <aside>
+            <img src="gnome.png" id="locationImg" height="200px" width="200px">
+          </aside>
+          <footer id="footer">
+            <div style="text-align:center;width:480px;">
+                <button onclick="move('north')">NORTH</button><br><br>
+                <button onclick="move('west')">WEST</button>
+                <button onclick="move('east')">EAST</button><br><br>
+                <button onclick="move('south')">SOUTH</button>
+            </div>
+
+        <script src="dun.js" async defer></script>
+    </body>
+</html>
+
